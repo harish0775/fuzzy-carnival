@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Resume</title>
+    <link rel="icon" type="image/x-icon" href="./images.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
@@ -138,12 +139,7 @@ section:nth-child(2n + 1) {
     margin: auto;
     margin-top: -17vh;
     
-}
-
-#my-image img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+}<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     border: 3px solid white;
     box-shadow: 1px 1px 10px 2px lightgrey;
     object-fit: cover;
@@ -346,12 +342,28 @@ section:nth-child(2n + 1) {
     box-shadow: 0 0 20px #74ADC8;
 }
 
-.portfolio-image-container:hover .portfolio-details {
+.portfolio-image-container:hover .portfolio-details  {
     background-color: #80808078;
     color: white;
+    
+}
+.portfolio-image-container:hover .portfolio-details a {
+    background-color: #80808078;
+    color: rgb(94, 4, 4);
+    z-index: 40;
+    background-color: transparent;
 }
 
+ .portfolio-details a {
+    position: absolute;
+    z-index: -11;
+    cursor: pointer;
+    font-size:small;
+    padding:14px 0px 0px 0px;
+    
+    
 
+}
 
 /* Contact Form */
 
@@ -365,7 +377,7 @@ section:nth-child(2n + 1) {
 #contact h1,
 #contact h1 span {
     color: white;
-}
+}<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 #contact-form {
     margin-left: 20%;
@@ -453,7 +465,7 @@ textarea {
 }
 
 #contact .social-icons li a i {
-    font-size: 1.2rem;
+    font-size: 1.2rem;<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     margin: 40px 10px 10px;
     padding: 10px 14px 20px 10px;
 
@@ -838,8 +850,8 @@ button:focus {
                 <div class="portfolio-image-container">
                     <img src="https://nodeexpressphotos.s3.ap-south-1.amazonaws.com/Node-Express/calculator.jpg">
                     <div class="portfolio-details">
-                        <p>
-                            Write here basic details about the project.
+                        <p>Write here basic details about the project
+                            <a href="https://calculator.node-express.com/" target="_blank">link</a>
                         </p>
                     </div>
 
@@ -848,16 +860,18 @@ button:focus {
                     <img src="https://nodeexpressphotos.s3.ap-south-1.amazonaws.com/Node-Express/Resume-image.jpg">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            Write here basic details about the project
+                            <a href="https://resume.node-express.com/" target="_blank">link</a>
                         </p>
                     </div>
-
+                   
                 </div>
                 <div class="portfolio-image-container">
                     <img src="https://nodeexpressphotos.s3.ap-south-1.amazonaws.com/Node-Express/Music.jpg">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            Write here basic details about the project
+                            <a href="https://music-player.node-express.com/" target="_blank">link</a>
                         </p>
                     </div>
 
@@ -866,10 +880,11 @@ button:focus {
                     <img src="https://nodeexpressphotos.s3.ap-south-1.amazonaws.com/Node-Express/To-Do+App.png">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            Write here basic details about the project
+                            <a href="https://to-do-app.node-express.com/" target="_blank">link</a>
                         </p>
                     </div>
-
+                    
                 </div>
                 <div class="portfolio-image-container">
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
@@ -971,7 +986,7 @@ button:focus {
     </main>
 <script>var progressBars = document.querySelectorAll(".skill-progress > div");
 
-
+portfolio-image-container
 
     function initialiseBar(bar) {
         bar.setAttribute("data-visited", false);
